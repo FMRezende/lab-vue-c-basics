@@ -10,22 +10,22 @@ import { ref } from 'vue'
 export default {
      data() {
         return {
-            backgroundColor: ref('red')
+            backgroundColor: ref('orange')
         }
      },
     methods: {
         changeColor (){
-            this.backgroundColor = this.backgroundColor === 'red' ? 'blue' : 'red';
+            this.backgroundColor = this.backgroundColor === 'orange' ? 'purple' : 'orange';
         }
     },
 }
 </script>
 
 <style lang="css">
-   .red {
-    background-color: red
+   .orange {
+    background-color: orange
    }
-   .blue {
-    background-color: blue
+   .purple {
+    background-color: purple
    }
 </style>

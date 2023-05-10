@@ -1,7 +1,7 @@
 <template lang="">
     <div>
-        <h2 v-show="mostrarNavbar">Navbar</h2>
-        <button @click="toggleMostrarMensaje">Mostrar/Ocultar mensaje</button>
+        <h2 v-show="showNavbar">Navbar</h2>
+        <button @click="toggleShowMensaje">Mostrar/Ocultar mensaje</button>
     </div>
 </template>
 
@@ -9,12 +9,12 @@
 export default {
     data(){
         return {
-            mostrarNavbar: true,
+            showNavbar: true,
         }
     },
     methods: {
-        toggleMostrarMensaje (){
-            this.mostrarNavbar = !this.mostrarNavbar
+        toggleShowMensaje (){
+            this.showNavbar = !this.showNavbar
         }
     }
 }
