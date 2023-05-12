@@ -1,7 +1,7 @@
 <template lang="">
     <div :class="[backgroundColor]">
         <button @click="changeColor">Change Color</button>
-        <h1>This is a box with a dynamic background color!</h1>
+        <h1>My box dynamic color!</h1>
     </div>
 </template>
 
